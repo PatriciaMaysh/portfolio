@@ -18,6 +18,13 @@
             <div class="container navbar-container">
                 <a href="#" class="logo">Patricia Maysh </a>
                 
+                <div class="hamburger" id="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+
+                </div>
+
                 <div class="nav-menu" id="nav-menu">
                     <ul class="nav-links">
                         <li><a href="#home">Home</a></li>
@@ -123,6 +130,24 @@
 
         </div>
     </footer>
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('nav-menu');
+        const navLinks = document.getElementById('.nav-links li a');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classlist.remove('active');
+                navMenu.classList.remove('active');
+            });
+        });
+    </script>
 
 </body>
 </html>
