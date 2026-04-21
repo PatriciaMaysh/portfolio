@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,6 +12,8 @@
 
 </head>
 <body>
+
+    <button class="Dark-Theme" onclick="Darktheme()"> Switch to Dark Theme</button>
 
     <header class="header">
         <nav class="navbar">
@@ -56,15 +58,90 @@
 
     <section class="about" id="about">
         <div class="about-content">
-            <h2 class="heading">About Me</h2>
+            <h2 class="section-title">About <span>Me</span></h2>
             <h3>Frontend learner</h3>
-            <p> Since October 2025, learning to code through SheCodes.io and enjoying the journey of digital experience and discovery.</p>           
+            <p> Before starting my coding journey, I studied BA in Social Work 
+                and MA in Conflict, Governance and Global Development at university.
+                I have worked within the Local Authority and the homeless charitable
+                sector for the last 20 years. My role has been working with Childrens'
+                Services and adults with dual diagnosis in emergency homeless hostels
+                supporting their day to day needs. In the last 4 years I have become 
+                a Health and Wellbeing Navigator where I support people at risk of 
+                homelessness to attend their physical and mental health appointments 
+                and work closely with the public, private and charitable partners. 
+                Despite enjoying my role, I have decided to explore different career 
+                paths where I can add my own creativity, learn new skills and work remotely
+                for better work/life balance. That is when I came across the SheCodes.io
+                Basics Workshops and signed up to the SheCodes.io Bootcamp program for absolute
+                beginners. I am learning the necessary coding skills in the most popular coding
+                languages to build a portfolio with real-life projects and learn what is needed to 
+                start my journey as a trainee junior developer.
+                My motto is simple: <br><h2>Trust the process!!!</h2></p>           
         </div>
     </section>
 
     <section class="my-projects" id="my-projects">
         <div class="my-projects-content">
-            <h2 class="heading">My projects</h2>
+            <h2 class="section-title">My <span>projects</span></h2>
+            <p class="projects-subtitle">A collection of projects I have built while learning to code through SheCodes.io</p>
+            <div class="projects-grid">
+                
+                <div class="project-card">
+                    <div class="project-img-wrapper">
+                        <img src="AI generator screenshot.png" alt="Patricia's AI Generator project screenshot" class="project-img">
+                        <div class="project-overlay">
+                            <a href="aimultichoicegenerator.netlify.app" class="btn-view">View Project</a>    
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">AI API</span>
+                            <span class="tag">HTML/CSS</span>
+                        </div>
+                        <h3 class="project-title">AI Content Generator</h3>
+                        <p class="project-desc">An AI-powered generator that creates poems, stories and more based on user keywords. Built wit JavaScript and integrated with an AI API.</p>
+
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-img-wrapper">
+                        <img src="weather forecst screenshot.png" alt="Weather Forecast app screenshot" class="project-img">
+                        <div class="project-overlay">
+                            <a href="patricias-weather.netlify.app" class="btn-view">View Project</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">Weather API</span>
+                            <span class="tag">HTML/CSS</span>
+                        </div>
+                        <h3 class="project-title">Weather Forecast App</h3>
+                        <p class="project-desc">A real-time weather app that displays temperature, humidity, wind speed and conditions for any city worldwide using a live API.</p>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-img-wrapper">
+                        <img src="world clock app screenshot.png" alt="World Clock app screenshot" class="project-img">
+                        <div class="project-overlay">
+                            <a href="worldappclock.netlify.app" class="btn-view">View Project</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">Time Zones</span>
+                            <span class="tag">HTML/CSS</span>
+                        </div>
+                        <h3 class="project-title">World Clock App</h3>
+                        <p class="project-desc">A live world clock app that displays the current time and date for cities around the globe. Users can select any cities to see its local time in real-time.</p>
+                    </div>
+                </div>
+                
+            </div>
         </div>
     </section>
 
@@ -108,7 +185,7 @@
     
     <section class="contact" id="contact">
     
-            <h2 class="heading">Contact <span>Me!</span></h2>
+            <h2 class="section-title">Contact <span>Me!</span></h2>
     
             <form class="contact-form">
                 <div class="form-group">
@@ -132,6 +209,7 @@
     </footer>
 
     <script>
+    
         const hamburger = document.getElementById('hamburger');
         const navMenu = document.getElementById('nav-menu');
         const navLinks = document.getElementById('.nav-links li a');
@@ -150,5 +228,5 @@
     </script>
 
 </body>
-</html>
+</htm>
                 
