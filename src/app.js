@@ -7,7 +7,7 @@ const handleForm = () => {
             const originalBtnText = btn.textContent;
             btn.textContent = 'Sending...';
 
-            const serviceID = 'service_lw1mv3q';
+            const serviceID = 'service_ijf0baq';
             const templateID = 'template_d0bq2oj';
 
             emailjs.sendForm(serviceID, templateID, form)
